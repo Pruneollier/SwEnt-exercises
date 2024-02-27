@@ -407,7 +407,7 @@ You ask where the source code is, and a developer shows you a repository in whic
 
 Suggest (1) a better way to handle old versions, (2) a better way to apply bugfixes to these versions, and (3) a process to apply your recommendations starting from the current state.
 
-#### Solutions
+## Solutions
 ### Evaluation criteria
 
 - The recommendations should be based on good version control practices
