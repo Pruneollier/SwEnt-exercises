@@ -407,6 +407,23 @@ You ask where the source code is, and a developer shows you a repository in whic
 
 Suggest (1) a better way to handle old versions, (2) a better way to apply bugfixes to these versions, and (3) a process to apply your recommendations starting from the current state.
 
+#### Solutions
+### Evaluation criteria
+
+- The recommendations should be based on good version control practices
+- The recommendations should be realistic, and not only theoretical
+  (for instance, it is unrealistic to cut up years' worth of history into commits each corresponding to a single change, even if this would be useful)
+
+
+### Suggested solution
+
+1. Each old version should be in a branch of the repository, not in another repository
+2. Instead of one commit per week, each developer should make one commit per new feature or bug fix
+3. The team should create a new branch per version and copy-paste the existing code for that version in the branch, which will create one large commit per version.
+   Then, the team can enforce that all developers must use pull requests to merge changes.
+   Fixes that need backporting to old versions can then done by "cherry picking" the relevant commits.
+
+
 ## Exercise 3: Good commit messages
 Below are five commit messages. For each message, determine if it's a good or bad commit message and justify your reasoning.
 
